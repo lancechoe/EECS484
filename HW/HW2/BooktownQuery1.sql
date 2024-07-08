@@ -1,0 +1,5 @@
+SELECT B.Author_ID
+FROM Books B 
+GROUP BY B.Author_ID
+HAVING COUNT(*) = 1
+ORDER BY B.Author_ID ASC;
